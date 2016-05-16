@@ -1,0 +1,4 @@
+13|devon|Design|1|11|4|2002|1|10|14|AM|0|0|0|no|no|closed|||yes
+0.0.0.0|I
+Welp, with the hard bits over, and the fun bits up ahead, The site should be undergoing some major aesthetic changes within the next few days or maybe weeks. I'm trying my best to keep it simple, as i don't need too many bells and whisles for what i'm doing. But I also wan't my site to be nice to look at, so i'm planning on spending a lot of time creating the graphics. I'm going to have a Hindu/Muslim/Asian traditional art motif, And make everything look kind of aged. Lot's of stone relief types of things, and a few collumns here and there. Lot's of deep reds,  and faded yellows. I'm not sure on whether I should have a sidebar, or whether that's just redundant. Personally, i feel that it could make certain things clearer, but perhaps just one Horizontal navigation bar, as part of the header, is good enough. Email me with some suggestions if you have any. |*|
+

@@ -1,0 +1,4 @@
+83|devon|Ko Samui,Thailand|4|1|1|2004|1|20|40|PM|0|0|0|no|yes|open|||no
+0.0.0.0|I
+You can call me Philias Fogg.|*||*|I realized last night as I was barrelling down a thai highway at 150k/h in a open air taxi to make a ferry here for new years that I'm a bad ass traveller. I had travelled straight from the depths of a malaysian jungle for nearly 40 hours, having rediculous experiences all along the way. I didnt make it to my destination though, Ko phan ngan, but at least I got as far as I could in the time allotted. Its the jungles fault. It made me get lost and be late for all sorts of things. I never got a chance to do any of this kind of thing on the boats, it was all laid before me and taken care of. But now that the test is bieng put to me, I'm finding myself in a lot of experiences which meet and exceed what I expected for my trip, and thats a surprise.|*||*|I'll write all the details when I get to phan ngan.
+

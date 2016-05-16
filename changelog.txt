@@ -1,0 +1,130 @@
+Greymatter 1.3.1
+changelog
+
+=== 1.3.1 ===
+* added xhtml sanitation for & symbols.
+  http://www.greymatterforums.com/index.php?topic=9178.msg40972#msg40972
+* added {{entrymood}} and {{entrymusic}} to {{logentrylist}} and {{calendar}}
+  http://www.greymatterforums.com/index.php?topic=7555.0
+* fixed default first paths (removed cgi-bin from log and entries/archives paths).
+* added the google comment spam prevention to the comments censor code
+  and default {{commentauthoremail}} & {{commentauthorhomepage}} templates.
+  http://www.google.com/googleblog/2005/01/preventing-comment-spam.html
+* cplog sanitised (< converted to &lt; and > converted to &gt;)
+  http://www.greymatterforums.com/index.php?topic=9146.0
+* gm-comments.cgi and gm-karma.cgi use the cplog subroutine
+* <iframe check added in php hack detection script
+* Editing Author without editing password no longer wipes password
+  http://www.greymatterforums.com/index.php?topic=8526.0
+* Inputs into gm-comments.cgi and gm.cgi have < and > replaced
+* Ampersand in Subject now comes out as &
+  http://www.greymatterforums.com/index.php?topic=8861.0
+* $commentname="gm_password"; at the top of gm-library.cgi. It changes the name of your password cookie
+  http://www.greymatterforums.com/index.php?topic=9146.0
+* Check for overwriting when adding new entry
+* $commentname support added to deleting cookie through config
+* Changed some of the simple html tags to lowercase: <b> <font>
+* cplog sanatise re-written to only take out possible hack html
+* {{smartentrymusic}} and {{smartentrymood}} now work in {{sidebar}}
+  http://www.greymatterforums.com/index.php?topic=8707.0
+* changed main menu background color and used some css goodies
+* http://www.greymatterforums.com/index.php?topic=6336
+  casting a karma vote neutralized emoticons, entrymusic, and entrymood (Fixed 2/2 Silent Bob)
+* http://www.greymatterforums.com/index.php?topic=6750
+  calendar doesn't validate as xhtml when month ends on Saturday (Fixed 1/8 linear)
+* http://www.greymatterforums.com/index.php?topic=6535
+  {{authorsmartlink}} gets autolinked twice
+* (no bug report, several complaints)
+  autolinking in entries removed. Use the {{link}} varaibles provided instead. (Fixed 2/19 linear)
+* fixed $aftermath related karma bug (Fixed 2/11 linear)
+* http://www.greymatterforums.com/index.php?topic=7105
+  {{loglistmonthwordshort}} returned wrong value (Fixed 2/8 Ian)
+* http://www.greymatterforums.com/index.php?topic=7141 (Fixed 6/29 Linear/flipped cracker)
+  added new $dategrouping flag
+* removed easy formatting from entry subject (flipped cracker 6/29)
+* updated gm gui using css (flipped cracker 6/29)
+
+
+=== 1.3 ===
+1) security-related fixes
+* Rebuilding Files no longer exposes author username and password
+    + uses a token file written to disk which is cleaned up at the end of the rebuild
+    + passes a reference to that token instead
+    + this keeps author usernames/password out of server and proxy logs, and out
+    of browser history. 
+    + knowledge of the token will not grant access since it expires.
+* &gm_phphackcheck improved in several ways
+    + now catches all PHP alternative delimiter styles: <?php ?> <? ?> 
+    <% %> and <script language="php"> </script>
+    + catches other forms of comment XSS attacks as well
+    + now logs to control panel log--with a config setting to
+    disable this logging (gm-phphacklog.cgi file now obsolete)
+    + now emails the comment email recipient list with a hack attempt 
+    notice-- with a config setting to disable this behavior
+    + some variable renaming bugs were cleaned up from patch to 1.21d
+    + &gm_phphackcheck is now called much earlier in the script
+* tag removal from comments made significantly more robust
+    + now catches any tags containing spaces (and attributes) previously
+    + still can't really catch nested tags cleanly, however, 
+    <script></script> is now intercepted by &gm_phphacklog
+* &gm_searchresults now improved for XSS issues
+    + now converts < and > to entites before printing the search string
+    + search string is still passed to the regex unmodified
+* passwords are stored in an encrypted form in gm-authors.cgi
+    + for compatibility and upgrade purposes, plaintext passwords are still 
+    supported, which allows for a "password reset" by modifying gm-authors.cgi 
+* search function input is examined before passing to the search code
+    + solves issues with special characters causing the search function to crash       
+
+2) feature improvements
+* upgrade routine improved
+    + removed "cannot determine version setup" issues
+    + upgrade recognizes recent versions, including the versions with 
+    encrypted passwords
+* included emoticons (smilie hack)
+    + includes clickable smilies on "add an entry" page
+    + includes clickable smilies on comment page
+    + emoticons can be disabled on a per-entry basis
+* added emoticons path to configuration
+    + allows use of {{emoticonspath}} in templates
+* changed number of entries being rebuilt from 20 to 10
+    + reduces load while rebuilding
+* &gm_saveconfigurationdr added to have gm save the config when going to the D&R screen
+    + removes the step of having to save the config and then go back to run the D&R
+* added music input for entries
+    + allows use of {{entrymusic}} variable in entry related templates
+    + {{smartentrymusic}} template allows you to repurpose the field for 
+    something else, and that label that won't display if the music field 
+    is left blank on that entry
+* added mood input for entries
+    + allows use of {{entrymood}} variable in entry related templates
+    + {{smartentrymood}} template allows you to repurpose the field for 
+    something else, and that label that won't display if the music field 
+    is left blank on that entry
+* new {{smartentrymusic}} and {{smartentrymood}} templates
+    + allow you to define your own label for the entry music and mood fields
+    + will not display the label if the fields are blank for an entry
+* new CSS-based default template set
+    + radically improves the look of a fresh install
+    + easier to modify since the stylesheet rules are in the header template
+    + uses most of the new template variables and new templates      
+* new Date Grouping Footer template
+    + allows you to use the Date Grouping Header template to open a <div> or other
+    element, which you can close in the Date Grouping Footer template, allowing
+    significantly improved grouping of entries by date  
+    + the corresponding template also appears in archive pages as well
+* new miscellaneous templates: Smartlink Target Template and Comment Smartlink Target Template
+    + allow you to specify a target frame for the {{*smartlink}} variables, specifically
+    allows using target="_blank" to make commenters' homepage links target a new window
+
+3) bug fixes
+* changed ambiguous wording in gm menu
+* added 00000000.cgi bugfix (http://www.greymatterforums.com/index.php?topic=5053)
+* added fix for square brackets and various other metacharacters in subject lines.
+  (http://www.greymatterforums.com/index.php?topic=5368)
+* comment preview code edited to allow use of image buttons in {{entrycommentsform}}
+  template (http://www.greymatterforums.com/index.php?topic=4185)
+* allow non-integer server time offset value.
+* added the {{logentrylist commentsnumber}} fix (bugfix and performance)
+  (http://www.greymatterforums.com/index.php?topic=5797)  
+* fixed 1.21c bug that affected editing authors passwords

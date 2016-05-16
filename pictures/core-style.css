@@ -1,0 +1,46 @@
+BODY { 
+	font-family: "Times new roman", Arial, Helvetica, serif;
+	line-height:125%;
+	color: #666600;
+	font-size:100%
+	
+
+}
+BR {
+	line-height:125%}
+P { 
+	line-height:115%}
+
+.entry{
+
+font-family: "Times New Roman", Helvetica, serif;
+line-height:125%;
+text-decoration:none
+}
+.entrysubject{
+font-style: bold;
+font-size: 115%;
+}
+
+IMG { border: none }
+
+A:link 	    {color: #666600;
+		font-size=100%;
+	  	font-weight: bold
+		border: none}
+
+A:visited {color: #434300;
+		font-size=100%;
+		font-weight: bold
+		border: none}
+
+A:active 	{color: #434300;
+		font-size=100%;
+		font-weight: bold
+		border: none}
+
+A:hover 	{color: #54a84d;
+		font-size=100%;
+		font-weight: bold
+		border: none}
+

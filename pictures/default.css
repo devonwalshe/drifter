@@ -1,0 +1,115 @@
+<!-- $Header: /cvsroot/yappa/yappa/default.css,v 1.6 2002/10/30 23:15:37 pixzone Exp $ -->
+
+body {
+    background-color: #330000;
+    margin: 0px;
+    font-family: "Times New Roman", helvetica, "new york", serif;
+    font-size: 100%;
+    color: #666600
+}
+a {
+    text-decoration: none;    
+}
+.text_title {
+    font-size: 170%;
+    color: #666600;
+}
+.text_album_path {
+     font-size: 100%;
+    font-weight: bold; 
+    text-decoration: none;
+    color: #666600;
+}
+.text_album_title {
+    font-size: 140%;
+      font-weight: bold; 
+    text-decoration: none;
+    color: #666600;
+}
+.text_album_comment {
+    font-size: 90%;
+    font-style: italic;
+    color: #666600;
+}
+.text_album_info {
+      font-weight: bold; 
+    text-decoration: none;
+    color: #666600;
+}
+.text_image_caption {
+    font-size: 80%;
+    color: #666600;
+}
+.text_navlink {
+      font-weight: bold; 
+    text-decoration: none;
+    color: #666600;
+}
+.text_album_nav_info {
+      font-weight: bold; 
+    text-decoration: none;
+    color: #666600;
+}
+.text_image_menubar {
+    font-size: 100%;
+    text-decoration: none;
+    color: #666600;
+}
+.bold_link { 
+    font-size: 100%;
+    font-weight: bold; 
+    text-decoration: none;
+    color: #666600;
+}
+.link_image {
+    font-size: 100%;
+    font-weight: bold; 
+    text-decoration: none;
+    color: #666600;
+}
+.link_image:hover {
+    font-size: 100%; 
+    font-weight: bold; 
+    text-decoration: none;
+    color: #666600;
+}
+
+A:link {color: #666600;
+	font-size=100%}
+
+A:visited {color: #666600;
+	font-size=100%}
+
+A:active {color: #666600;
+	font-size=100%}
+
+A:hover {color: #666600;
+	font-size=100%}
+	
+.menubar_cell { 
+    background-color: #330000 
+}
+.album_cell { 
+    background-color: #330000 
+}
+.subalbums_bar { 
+    background-color: #330000 
+}
+.album_cell_selected { 
+    background-color: #330000
+}
+.thumbnail_cell { 
+    background-color: #330000 
+}
+.image_cell { 
+    background-color: #330000 
+}
+.imagemenu_cell { 
+    background-color: #330000 
+}
+.album_cell_a { 
+    background-color: #330000
+}
+.album_cell_b { 
+    background-color: #330000
+}

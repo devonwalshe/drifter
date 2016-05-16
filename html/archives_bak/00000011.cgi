@@ -1,0 +1,4 @@
+11|devon|PHP is a mother|5|11|1|2002|4|21|42|PM|0|0|0|no|no|open
+0.0.0.0|I
+Well i'd just like to report to you nobodies, (nobody meaning the people that don't read my site, which is everybody ironically) that the photo gallery is almost up. For the longest time i was having a devil of a time installing these packages that were needed for the gallery making program. Namely "imagemagick" which these programs need to resize all the photo's into nice neat thumbnails. So now that that image magick is installed, i should be able to get the gallery program, yappa to work. The problem is, it requires PHP. PHP is installed, but just not turned on in my computer, so it's also another bugger getting that working, but it should be up within the next few days, and i'll have all my photo's for all of you to see! Talk to you nobodies soon
+

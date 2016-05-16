@@ -1,0 +1,4 @@
+28|Morgan|howdy folks|5|12|6|2002|2|16|3|AM|0|0|0|no|no|closed
+0.0.0.0|I
+how's everyone doing|*||*|nah martin, im outta school as of....3 days ago|*|so im sitting around, trying to get a job - so if anyone out there who lives in vancouver and is reading this and needs a hardworking employee, gimme a call!! =)|*|but seriously...ive got to find myself a job one of these days, my bank account depresses me everytime i look at it....AHHHH AND THEN CHRISTMAS PRESENTS AND ALL THAT COMING SO SOON....gah!|*||*|but life's good otherwise, cant complain. tho martin's right, i want some freakin' snow sometime soon. |*|it looks like the snowboarding season's going to be kinda bleak....we're gonna be pullin some crazy dirt-boarding if Santa doesnt bring some of that merry white stuff pretty soon|*||*||*|anyhow. take care all...happy holidays, merry christmas, hannukah or wwhatever...FELIZ NAVIDAD, PERRAS!|*||*|
+
