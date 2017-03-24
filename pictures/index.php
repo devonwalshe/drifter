@@ -2,7 +2,7 @@
 	
 /*
  * Project:     YAPPA : Yet Another PHP Photo Album
- * Author:      Federico Feroldi <pix@pixzone.com>
+ * Author:      Federico Feroldi pix@pixzone.com
  * Copyright:   2001 Federico Feroldi
  * $Header: /cvsroot/yappa/yappa/index.php,v 1.17 2002/04/23 16:09:56 pixzone Exp $
  *              
@@ -503,4 +503,3 @@ if(is_array($exif = $page["image_info"]["exif"])) {
 
 </body>
 </html>
-<!-- $Header: /cvsroot/yappa/yappa/index.php,v 1.17 2002/04/23 16:09:56 pixzone Exp $ -->
