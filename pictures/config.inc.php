@@ -1,7 +1,4 @@
 <?
-
-
-
 /* 
 
  * YAPPA, main configuration
@@ -28,7 +25,7 @@ $config = array(
 
 /* image module: magick, gd */
 
-"image_module" => 'magick',
+"image_module" => 'gd',
 
 
 

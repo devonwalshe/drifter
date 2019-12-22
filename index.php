@@ -109,7 +109,7 @@ $directory="./photochoice/";
 
 
 
-$pattern="\.(gif|jpg|jpeg|png|bmp|swf)$";
+$pattern="/\.(gif|jpg|jpeg|png|bmp|swf)$/";
 
 if(!$dir)
 
@@ -129,7 +129,7 @@ while($s)
 
 {
 
-if(ereg($pattern, $s))
+if(preg_match($pattern, $s))
 
 {
 

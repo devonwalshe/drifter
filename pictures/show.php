@@ -120,7 +120,7 @@ function update_cache($album_name, $obj_name, $resize)
         list($resize_width, $resize_height) = split('x', $resize);
     }
 
-    $cache_dir = "$album_name/_$cache_dir";
+  $cache_dir = "$album_name/_$cache_dir";
 	$image_cached = "$cache_root/$cache_dir/$obj_name";
 
 	if(!file_exists($image_cached) || (filemtime($obj_path) > filemtime($image_cached))) {
