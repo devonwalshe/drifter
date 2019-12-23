@@ -112,7 +112,7 @@ function update_cache($album_name, $obj_name, $resize)
     }
 
     if($resize == 'thumbnail') {
-        $cache_dir = $define[thumbnails_dirname];
+        $cache_dir = $define["thumbnails_dirname"];
         $resize_width = $config["thumb_width"];
         $resize_height = $config["thumb_height"];
     } else {
@@ -151,7 +151,7 @@ function makepath($root, $subpath, $mode = '')
         $mode = $define["mkdir_mode"];
     }
     
-    $dir_array = preg_split('/', $subpath);
+    $dir_array = preg_split('/\//', $subpath);
     $path = $root;
     foreach($dir_array as $dir) {
         $path .= "/$dir";
