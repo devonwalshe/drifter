@@ -151,7 +151,7 @@ function makepath($root, $subpath, $mode = '')
         $mode = $define["mkdir_mode"];
     }
     
-    $dir_array = split('/', $subpath);
+    $dir_array = preg_split('/', $subpath);
     $path = $root;
     foreach($dir_array as $dir) {
         $path .= "/$dir";
